@@ -1,5 +1,5 @@
 ﻿
-实验四：构建LAMP网站平台
+一：构建LAMP网站平台
 1.安装软件包
 [root@svr7 ~]# rpm -q httpd mariadb-server mariadb php php-mysql
 [root@svr7 ~]# yum -y install mariadb-server mariadb php php-mysql
@@ -18,9 +18,9 @@
 [root@svr7 ~]# cat /var/www/html/test2.php
 <?php
     $link=mysql_connect('localhost','root','Taren1');
-    if($link) echo "Success !!";         //成功则显示Success !!
-    else echo "Failure !!";             //失败则显示Failure !!
-    mysql_close();                       //关闭数据库连接
+    if($link) echo "Success !!";        	  //成功则显示Success !!
+    else echo "Failure !!";            		 //失败则显示Failure !!
+    mysql_close();                      	 //关闭数据库连接
 ?>
 5.启动服务
 [root@svr7 ~]# service httpd restart
@@ -47,7 +47,3 @@ mysql> quit
 3.安装论坛系统
 [root@pc207 ~]# 
 4.访问论坛前台首页  http://127.0.0.1/
-
-
-
-
